@@ -83,5 +83,17 @@
         </footer>
       </div>
     </div>
+    <script>
+      window.onload = function(){
+      setTimeout(loadAfterTime, 3000)
+      };
+      var x = document.querySelectorAll('card');
+
+      function loadAfterTime() { 
+        for (let index = 0; index < x.length; index++) {
+          x[index].style.display = "none";          
+        }
+      }
+    </script>
   </body>
 </html>
